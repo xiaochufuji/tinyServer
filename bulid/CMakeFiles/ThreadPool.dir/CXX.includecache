@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xiaohongxie/桌面/MyLoger4cpp/include/ThreadPool.h
+thread
+-
+queue
+-
+functional
+-
+vector
+-
+mutex
+-
+condition_variable
+-
+future
+-
+atomic
+-
+memory
+-
+
+/home/xiaohongxie/桌面/MyLoger4cpp/src/ThreadPool.cpp
+../include/ThreadPool.h
+/home/xiaohongxie/桌面/MyLoger4cpp/include/ThreadPool.h
+

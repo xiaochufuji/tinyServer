@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xiaohongxie/桌面/MyLoger4cpp/include/SingleTon.h
+mutex
+-
+memory
+-
+iostream
+-
+
+/home/xiaohongxie/桌面/MyLoger4cpp/include/log.h
+SingleTon.h
+/home/xiaohongxie/桌面/MyLoger4cpp/include/SingleTon.h
+mutex
+-
+string
+-
+fcntl.h
+-
+
+/home/xiaohongxie/桌面/MyLoger4cpp/src/log.cpp
+../include/log.h
+/home/xiaohongxie/桌面/MyLoger4cpp/include/log.h
+

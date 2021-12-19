@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11 -O2 -pthread -fopenmp -Wl,-rpath=./lib:./:../lib -O3 -DNDEBUG  -shared -Wl,-soname,libThreadPool.so -o ../lib/libThreadPool.so CMakeFiles/ThreadPool.dir/src/ThreadPool.cpp.o 

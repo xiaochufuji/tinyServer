@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"thread": "cpp",
+			"condition_variable": "cpp",
+			"future": "cpp",
+			"memory": "cpp",
+			"queue": "cpp",
+			"mutex": "cpp"
+		}
+	}
+}
