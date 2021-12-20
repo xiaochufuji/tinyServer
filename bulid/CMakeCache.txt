@@ -188,6 +188,9 @@ LOGGER_BINARY_DIR:STATIC=/home/xiaohongxie/桌面/MyLoger4cpp/bulid
 LOGGER_SOURCE_DIR:STATIC=/home/xiaohongxie/桌面/MyLoger4cpp
 
 //Dependencies for target
+Log_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
 ThreadPool_LIB_DEPENDS:STATIC=
 
 //Dependencies for target

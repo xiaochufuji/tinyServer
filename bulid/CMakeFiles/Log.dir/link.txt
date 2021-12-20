@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11 -O2 -pthread -fopenmp -Wl,-rpath=./lib:./:../lib -O3 -DNDEBUG  -shared -Wl,-soname,libLog.so -o ../lib/libLog.so CMakeFiles/Log.dir/src/Log.cpp.o 

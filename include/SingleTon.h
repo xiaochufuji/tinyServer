@@ -1,7 +1,8 @@
 #include <mutex>
 #include <memory>
 #include <iostream>
-using namespace std;
+#include "config.h"
+
 namespace std
 {
     template <typename klassType>
@@ -20,12 +21,16 @@ namespace std
         {
             return g_instance.get();
         }
-        virtual ~SingleTon(){
-            // cout << "destory singleton" << endl;
+        virtual ~SingleTon()
+        {
+#ifdef DEBUG
+            cout << "destory singleton" << endl;
+#endif
         };
 
     private:
         static smart_ptr g_instance;
+        static mutex g_mutex;
 
     protected:
         SingleTon();
@@ -35,9 +40,13 @@ namespace std
     template <typename klassType>
     SingleTon<klassType>::SingleTon()
     {
-        // cout << "construct singleton" << endl;
+#ifdef DEBUG
+        cout << "construct singleton" << endl;
+#endif
     }
     /* 初始化静态成员 */
+    template <typename klassType>
+    mutex SingleTon<klassType>::g_mutex;
     template <typename klassType>
     shared_ptr<klassType> SingleTon<klassType>::g_instance(new klassType,
                                                            [](klassType *ptrInFace)
@@ -46,18 +55,21 @@ namespace std
                                                                {
                                                                    delete ptrInFace;
                                                                    ptrInFace = nullptr;
-                                                                   // cout << "deletor end" << endl;
+#ifdef DEBUG
+                                                                   cout << "deletor end" << endl;
+#endif
                                                                }
                                                            });
     /* 获取单例对象 */
     template <typename klassType>
     shared_ptr<klassType> &SingleTon<klassType>::getInstance()
     {
-
-        lock_guard<mutex> lock();
-        if (g_instance.get() == nullptr)
         {
-            g_instance.reset(new klassType);
+            lock_guard<mutex> lock(g_mutex);
+            if (g_instance.get() == nullptr)
+            {
+                g_instance.reset(new klassType);
+            }
         }
         return g_instance;
     }

@@ -1,1 +1,1 @@
-/usr/bin/c++   -std=c++11 -O2 -pthread -fopenmp -Wl,-rpath=./lib:./:../lib -O3 -DNDEBUG  -rdynamic CMakeFiles/main.dir/main.cpp.o  -o ../bin/main -Wl,-rpath,/home/xiaohongxie/桌面/MyLoger4cpp/lib ../lib/liblog.so 
+/usr/bin/c++   -std=c++11 -O2 -pthread -fopenmp -Wl,-rpath=./lib:./:../lib -O3 -DNDEBUG  -rdynamic CMakeFiles/main.dir/main.cpp.o  -o ../bin/main -Wl,-rpath,/home/xiaohongxie/桌面/MyLoger4cpp/lib ../lib/libThreadPool.so ../lib/libLog.so 

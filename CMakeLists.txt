@@ -22,8 +22,8 @@ add_library(ThreadPool SHARED
         src/ThreadPool.cpp
         
 )
-add_library(log SHARED
-            src/log.cpp
+add_library(Log SHARED
+            src/Log.cpp
         
 )
 # 编译出可执行文件
@@ -34,5 +34,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wl,-rpath=./lib:./:../lib")
 
 # 目标程序链接关系
 target_link_libraries(main 
-                      log
+                      ThreadPool
+                      Log
                       )

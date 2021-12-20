@@ -13,8 +13,14 @@ memory
 -
 iostream
 -
+config.h
+/home/xiaohongxie/桌面/MyLoger4cpp/include/config.h
+
+/home/xiaohongxie/桌面/MyLoger4cpp/include/config.h
 
 /home/xiaohongxie/桌面/MyLoger4cpp/include/log.h
+config.h
+/home/xiaohongxie/桌面/MyLoger4cpp/include/config.h
 SingleTon.h
 /home/xiaohongxie/桌面/MyLoger4cpp/include/SingleTon.h
 mutex
@@ -22,6 +28,24 @@ mutex
 string
 -
 fcntl.h
+-
+stdlib.h
+-
+unistd.h
+-
+stdio.h
+-
+libgen.h
+-
+sys/stat.h
+-
+sys/types.h
+-
+time.h
+-
+stdarg.h
+-
+string.h
 -
 
 /home/xiaohongxie/桌面/MyLoger4cpp/src/log.cpp

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/xiaohongxie/桌面/MyLoger4cpp/main.cpp" "/home/xiaohongxie/桌面/MyLoger4cpp/bulid/CMakeFiles/main.dir/main.cpp.o"
+  "/home/xiaohongxie/桌面/MyLoger4cpp/src/Log.cpp" "/home/xiaohongxie/桌面/MyLoger4cpp/bulid/CMakeFiles/Log.dir/src/Log.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,8 +15,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/xiaohongxie/桌面/MyLoger4cpp/bulid/CMakeFiles/ThreadPool.dir/DependInfo.cmake"
-  "/home/xiaohongxie/桌面/MyLoger4cpp/bulid/CMakeFiles/Log.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

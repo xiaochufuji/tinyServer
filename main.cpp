@@ -35,13 +35,10 @@
 //         ;
 // }
 
-#include "./include/log.h"
+#include "./include/GlobalFuntion.h"
 
 int main()
 {
-    {
-        auto a = Log::getInstance();
-        a->dosomething();
-    }
+    xcfj::test_for_log_and_mutiThread();
     return 0;
 }

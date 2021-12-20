@@ -44,5 +44,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/main.dir/DependInfo.cmake"
   "CMakeFiles/ThreadPool.dir/DependInfo.cmake"
-  "CMakeFiles/log.dir/DependInfo.cmake"
+  "CMakeFiles/Log.dir/DependInfo.cmake"
   )
