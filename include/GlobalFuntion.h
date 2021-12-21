@@ -88,7 +88,7 @@ namespace xcfj
                     "我的那些潦草诗", rand() % 65535 + 65535);
             }
         };
-        ThreadPool pool(10);
+        ThreadPool pool(20);
         for (size_t i = 0; i < 10; ++i)
         {
             pool.addTask(a);
